@@ -1,0 +1,114 @@
+Model: "model_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input (InputLayer)          [(None, 48, 48, 1)]       0         
+                                                                 
+ conv1_1 (Conv2D)            (None, 48, 48, 64)        640       
+                                                                 
+ batch_normalization_85 (Bat  (None, 48, 48, 64)       256       
+ chNormalization)                                                
+                                                                 
+ conv1_2 (Conv2D)            (None, 48, 48, 64)        36928     
+                                                                 
+ batch_normalization_86 (Bat  (None, 48, 48, 64)       256       
+ chNormalization)                                                
+                                                                 
+ pool1_1 (MaxPooling2D)      (None, 24, 24, 64)        0         
+                                                                 
+ drop1_1 (Dropout)           (None, 24, 24, 64)        0         
+                                                                 
+ conv2_1 (Conv2D)            (None, 24, 24, 128)       73856     
+                                                                 
+ batch_normalization_87 (Bat  (None, 24, 24, 128)      512       
+ chNormalization)                                                
+                                                                 
+ conv2_2 (Conv2D)            (None, 24, 24, 128)       147584    
+                                                                 
+ batch_normalization_88 (Bat  (None, 24, 24, 128)      512       
+ chNormalization)                                                
+                                                                 
+ conv2_3 (Conv2D)            (None, 24, 24, 128)       147584    
+                                                                 
+ pool2_1 (MaxPooling2D)      (None, 12, 12, 128)       0         
+                                                                 
+ drop2_1 (Dropout)           (None, 12, 12, 128)       0         
+                                                                 
+ conv3_1 (Conv2D)            (None, 12, 12, 256)       295168    
+                                                                 
+ batch_normalization_90 (Bat  (None, 12, 12, 256)      1024      
+ chNormalization)                                                
+                                                                 
+ conv3_2 (Conv2D)            (None, 12, 12, 256)       590080    
+                                                                 
+ batch_normalization_91 (Bat  (None, 12, 12, 256)      1024      
+ chNormalization)                                                
+                                                                 
+ conv3_3 (Conv2D)            (None, 12, 12, 256)       590080    
+                                                                 
+ batch_normalization_92 (Bat  (None, 12, 12, 256)      1024      
+ chNormalization)                                                
+                                                                 
+ conv3_4 (Conv2D)            (None, 12, 12, 256)       590080    
+                                                                 
+ batch_normalization_93 (Bat  (None, 12, 12, 256)      1024      
+ chNormalization)                                                
+                                                                 
+ pool3_1 (MaxPooling2D)      (None, 6, 6, 256)         0         
+                                                                 
+ drop3_1 (Dropout)           (None, 6, 6, 256)         0         
+                                                                 
+ conv4_1 (Conv2D)            (None, 6, 6, 256)         590080    
+                                                                 
+ batch_normalization_94 (Bat  (None, 6, 6, 256)        1024      
+ chNormalization)                                                
+                                                                 
+ conv4_2 (Conv2D)            (None, 6, 6, 256)         590080    
+                                                                 
+ batch_normalization_95 (Bat  (None, 6, 6, 256)        1024      
+ chNormalization)                                                
+                                                                 
+ conv4_3 (Conv2D)            (None, 6, 6, 256)         590080    
+                                                                 
+ batch_normalization_96 (Bat  (None, 6, 6, 256)        1024      
+ chNormalization)                                                
+                                                                 
+ conv4_4 (Conv2D)            (None, 6, 6, 256)         590080    
+                                                                 
+ batch_normalization_97 (Bat  (None, 6, 6, 256)        1024      
+ chNormalization)                                                
+                                                                 
+ pool4_1 (MaxPooling2D)      (None, 3, 3, 256)         0         
+                                                                 
+ drop4_1 (Dropout)           (None, 3, 3, 256)         0         
+                                                                 
+ conv5_1 (Conv2D)            (None, 3, 3, 512)         1180160   
+                                                                 
+ batch_normalization_98 (Bat  (None, 3, 3, 512)        2048      
+ chNormalization)                                                
+                                                                 
+ conv5_2 (Conv2D)            (None, 3, 3, 512)         2359808   
+                                                                 
+ batch_normalization_99 (Bat  (None, 3, 3, 512)        2048      
+ chNormalization)                                                
+                                                                 
+ conv5_3 (Conv2D)            (None, 3, 3, 512)         2359808   
+                                                                 
+ batch_normalization_100 (Ba  (None, 3, 3, 512)        2048      
+ tchNormalization)                                               
+                                                                 
+ conv5_4 (Conv2D)            (None, 3, 3, 512)         2359808   
+                                                                 
+ pool5_1 (MaxPooling2D)      (None, 1, 1, 512)         0         
+                                                                 
+ drop5_1 (Dropout)           (None, 1, 1, 512)         0         
+                                                                 
+ flatten (Flatten)           (None, 512)               0         
+                                                                 
+ output (Dense)              (None, 7)                 3591      
+                                                                 
+=================================================================
+Total params: 13,111,367
+Trainable params: 13,103,431
+Non-trainable params: 7,936
+_________________________________________________________________
