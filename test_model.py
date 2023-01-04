@@ -1,11 +1,11 @@
 import cv2
 import numpy as np
-from tensorflow.keras.models import load_model, model_from_json
-from tensorflow.keras.preprocessing.image import load_img,img_to_array
-from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import model_from_json
+from tensorflow.keras.preprocessing.image import img_to_array
+
 model = model_from_json(open("static\model_arch.json", "r").read())
 model.load_weights('static\model.h5')
-# model = load_model('static\Fer2013.h5')
+
 face_haar_cascade = cv2.CascadeClassifier('static\haarcascade_frontalface_default.xml')
 cap=cv2.VideoCapture(0)
 
